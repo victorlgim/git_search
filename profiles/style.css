@@ -1,0 +1,272 @@
+body {
+  background-color: var(--color-grey-2);
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.div-top {
+  display: flex;
+}
+
+.flex-column {
+  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-header img {
+  border: 2px solid #d6336c;
+  border-radius: 150px;
+}
+
+.profile-header h2 {
+  color: var(--color-grey-7);
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.profile-header small {
+  color: rgba(255, 255, 255, 0.5);
+  width: 400px;
+}
+
+.div-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-email {
+  width: 84px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: var(--color-brand-2);
+  color: var(--color-grey-7);
+  border: none;
+}
+
+.btn-email:hover {
+  background-color: #f34984;
+}
+
+.btn-user {
+  width: 169px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: var(--color-grey-7);
+  border: none;
+}
+
+.btn-user:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.ul-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+}
+
+.container-li {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container-li h3 {
+  font-size: 18px;
+  color: var(--color-grey-7);
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+.container-li p {
+  width: 327px;
+  height: 63px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-grey-6);
+  margin-top: 30px;
+}
+
+.buttons-flex {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-repo {
+  width: 93px;
+  height: 28px;
+  background: var(--color-grey-2);
+  border: 1px solid var(--color-grey-7);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--color-grey-7);
+}
+
+.btn-repo:hover {
+  background: var(--color-brand-2);
+  border: 1px solid var(--color-brand-2);
+  color: var(--color-grey-7);
+  transition: 0.1s ease;
+}
+
+.modal-loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.spinner {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  background-color: #d6336c;
+  border-radius: 50%;
+  display: inline-block;
+  animation: motion 2.2s infinite;
+}
+
+.loading-msg {
+  color: #fff;
+  margin-top: 5px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+.btn-demo {
+  width: 63px;
+  height: 28px;
+  background: var(--color-grey-2);
+  border: 1px solid var(--color-grey-7);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: var(--color-grey-7);
+}
+
+.btn-demo:hover {
+  background: var(--color-brand-2);
+  border: 1px solid var(--color-brand-2);
+  color: var(--color-grey-7);
+  transition: 0.1s ease;
+}
+
+.ul-main li {
+  width: 381px;
+  height: 243px;
+  background-color: var(--color-grey-2);
+  border: 2px solid var(--color-grey-4);
+  border-radius: 8px;
+  list-style-type: none;
+}
+
+.ul-main li:hover {
+  background-color: var(--color-grey-1);
+  border: 2px solid var(--color-grey-7);
+  transition: 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+.email-to {
+  padding-top: 12px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: 100%;
+  padding-top: 4px;
+}
+
+body {
+  transition: 0.8px;
+  animation: smoothShow 800ms;
+}
+
+@keyframes smoothShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes motion {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    transform: translateX(-50px) scale(0.3);
+  }
+  50% {
+    transform: translateX(0) scale(1);
+  }
+  75% {
+    transform: translateX(50px) scale(0.3);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
