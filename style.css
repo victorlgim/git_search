@@ -86,7 +86,7 @@
 }
 
 body {
-  transition: 0.8px;
+  transition: 0.8s ease;
   animation: smoothShow 800ms;
 }
 
@@ -172,11 +172,22 @@ body {
   margin-top: 15px;
   padding-left: 10px;
   color: var(--color-grey-7);
+  outline: none;
+  
+}
+
+.login input:focus {
+  outline: none;
 }
 
 .login input::placeholder {
   background-color: var(--color-grey-1);
   color: var(--color-grey-6);
+  outline: none;
+}
+
+.login input::placeholder:focus {
+  outline: none;
 }
 
 .login button {

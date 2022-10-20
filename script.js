@@ -46,7 +46,7 @@ const data = async input => {
           renderError();
         }, 2000);
       }
-
+      
       return response.json();
     })
     .then(responseJson => responseJson)
@@ -108,6 +108,7 @@ async function validateInput() {
     event.preventDefault();
     const verifyInput = input.value;
     const modifyApi = await data(verifyInput);
+    console.log(modifyApi)
     const modify = JSON.stringify(await data(verifyInput));
     const modifyParse = JSON.parse(modify);
     if (!modifyApi.message) {
