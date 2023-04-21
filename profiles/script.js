@@ -6,7 +6,7 @@ btnToggleUser.addEventListener("click", event => {
   setTimeout(() => {
     localStorage.removeItem("dados");
     window.location.replace("../index.html");
-  }, 3000);
+  }, 1000);
 });
 
 const verify = localStorage.getItem("dados");

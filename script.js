@@ -36,7 +36,7 @@ const data = async input => {
         setTimeout(() => {
           btn.innerText = "Ver Perfil do Github";
           window.location.replace("./profiles/index.html");
-        }, 2000);
+        }, 1000);
       } else {
         localStorage.removeItem("dados");
         const msg = document.querySelector(".msg-error");
@@ -44,7 +44,7 @@ const data = async input => {
         setTimeout(() => {
           btn.innerText = "Ver Perfil do Github";
           renderError();
-        }, 2000);
+        }, 1000);
       }
       
       return response.json();
