@@ -184,7 +184,7 @@ imgProfiles.forEach(e => {
 
           localStorage.setItem("dados", converseEv);
           window.location.replace("./profiles/index.html");
-        }, 2000);
+        }, 1000);
       }
     });
   });
